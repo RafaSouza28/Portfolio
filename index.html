@@ -47,9 +47,9 @@
     </div>
 </section>
 
-  <section id="about" class="my-5">
+  <section id="about" class="my-5 py-3" style="background-color: #723172">
     <div class="container">
-        <h2 class="text-center mb-4">Sobre Mim</h2>
+        <h2 class="text-center mb-4 text-white">Sobre Mim</h2>
         <div class="row">
             <div class="col-md-4">
                 <h3>Escolaridade</h3> 
@@ -77,11 +77,12 @@
         </div>
     </div>
 </section>
-<div class="container my-4">
+    
+<div class="container my-4" id="portfolio>
    <h1 class="text-center mb-4">Galeria de Imagens</h1>
    <div class="row row-cols-1 row-cols-md-3 g-4 gallery">
        <div class="col">
-           <div class="card">
+           <div class="card shadow">
                <img src="https://via.placeholder.com/300" class="card-img-top" alt="Imagem 1">
                <div class="card-body">
                    <p class="card-text">Descrição da Imagem 1</p>
@@ -107,25 +108,45 @@
        <!-- Adicione mais imagens conforme necessário -->
    </div>
 </div>
-    <section id="contact" class="container">
-        <div class="row">
-            <div class="col"></div>
-            <div class="col">
-                <form
-  action="https://formspree.io/f/xblrbdzr"
-  method="POST"
->
-  <label>
-    Your email:
-    <input type="email" name="email">
-  </label>
-  <label>
-    Your message:
-    <textarea name="message"></textarea>
-  </label>
-  <!-- your other form fields go here -->
-  <button type="submit">Send</button>
-</form>
+    
+
+    <section class="container-fluid" style="background-color: #723172" id="contact">
+        <div class="container py-2" >
+            <div class="row">
+
+                <div class="col my-auto">                    
+                    <ul class="list-group">
+                        <li class="list-group-item">
+                            <a href="https://wa.me/5543991324630?text=Olá%20Estou%20interessado%20em%20contratar%20seus%20serviços" style="text-decoration: none;">
+                                <img style="width: 50px;" src="assets/img/icone-whatsapp.png" alt="">
+                                <span>(43)99132-4630</span>
+                            </a>
+                        </li>
+                        <li class="list-group-item">
+                            <a href="https://www.instagram.com/idline_presenca_digital/" style="text-decoration: none;">
+                                <img style="width: 50px;" src="assets/img/icone-instagram.png" alt="">
+                                <span>@idline_presenca_digital</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="col my-auto text-white">
+                    <form action="https://formspree.io/f/xblrbdzr" method="POST">
+                        <label class="form-label">Seu email</label>
+
+                        <input class="form-control" type="email" name="email">
+
+                        <label class="form-label">Sua Mensagem</label>
+
+                        <textarea class="form-control mb-3" id="exampleFormControlTextarea1" rows="3"
+                            name="message"></textarea>
+
+                        <!-- your other form fields go here -->
+                        <button class="btn btn-primary" type="submit">Send</button>
+                    </form>
+                </div>
+
             </div>
         </div>
     </section>
